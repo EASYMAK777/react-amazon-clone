@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "../Navbar/Navbar.css"
+import SearchIcon from '@material-ui/icons/Search';
 
 function Navbar() {
     return (
@@ -17,6 +18,7 @@ function Navbar() {
 
             {/* Search box */}
             <input type="text" className="header__searchInput" />
+            <SearchIcon className="header__searchIcon" />
 
 
             
