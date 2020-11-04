@@ -23,7 +23,7 @@ function Navbar() {
 
 
             {/* 3 Links top right corner of nav */}
-            <div className="headernav">
+            <div className="header__nav">
                 
                 {/* 1st Link */}
                 <Link to="/login" className="header__link">
@@ -37,16 +37,16 @@ function Navbar() {
                 {/* 2nd Link */}
                 <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span>Hello Juan</span>
-                        <span>Sign-In</span>
+                        <span>Returns</span>
+                        <span>& Orders</span>
                     </div>
                 </Link>
                 
                 {/* 3rd Link */}
                 <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span>Hello Juan</span>
-                        <span>Sign-In</span>
+                        <span>Your</span>
+                        <span>Prime</span>
                     </div>
                 </Link>
 
