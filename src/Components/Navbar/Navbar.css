@@ -5,6 +5,8 @@
 }
 
 .header___logo{
+    /* keeps logo the same size  */
+    object-fit: contain;
     width: 100px;
     margin-left: 20px;
     margin-right: 20px;
@@ -12,11 +14,16 @@
 }
 
 .header__searchIcon {
+    padding: 5px;
     background-color: #cd9042;
+    height: 22px; 
 }
 
 .header__search {
+    /* search bar set to take as much space as possible when screen size changes */
     display: flex;
+    flex: 1; 
+    
 }
 
 .header__searchInput{
