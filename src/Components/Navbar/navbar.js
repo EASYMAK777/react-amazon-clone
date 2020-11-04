@@ -17,6 +17,7 @@ function Navbar() {
 
 
             {/* Search box */}
+            <div className="header__search" />
             <input type="text" className="header__searchInput" />
             <SearchIcon className="header__searchIcon" />
 
