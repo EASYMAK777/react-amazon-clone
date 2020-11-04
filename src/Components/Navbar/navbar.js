@@ -2,9 +2,16 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <div>
+        <nav className="header">
+            {/* logo on the left -> */}
+            <img className="header___logo" src = "src\img\amazon_PNG11.png"></img>
+
+
+            {/* Search box */}
+            {/* 3 Links */}
+            {/* Basket icon with a number */}
             
-        </div>
+        </nav>
     )
 }
 
