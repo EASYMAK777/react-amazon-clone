@@ -28,8 +28,8 @@ function Navbar() {
                 {/* 1st Link */}
                 <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span>Hello Juan</span>
-                        <span>Sign-In</span>
+                        <span className="header__option1">Hello Juan</span>
+                        <span className="header__option2">Sign-In</span>
                     </div>
                 </Link>
 
@@ -37,16 +37,16 @@ function Navbar() {
                 {/* 2nd Link */}
                 <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span>Returns</span>
-                        <span>& Orders</span>
+                        <span className="header__option1"> Returns</span>
+                        <span className="header__option2">& Orders</span>
                     </div>
                 </Link>
                 
                 {/* 3rd Link */}
                 <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span>Your</span>
-                        <span>Prime</span>
+                        <span className="header__option1">Your</span>
+                        <span className="header__option2">Prime</span>
                     </div>
                 </Link>
 
@@ -54,8 +54,8 @@ function Navbar() {
                 {/* 4th Link */}
                 <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span>Hello Juan</span>
-                        <span>Sign-In</span>
+                        <span className="header__option1">Hello Juan</span>
+                        <span className="header__option2">Sign-In</span>
                     </div>
                 </Link>
             </div>
