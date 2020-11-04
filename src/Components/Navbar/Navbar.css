@@ -14,3 +14,14 @@
 .header__searchIcon {
     background-color: #cd9042;
 }
+
+.header__search {
+    display: flex;
+}
+
+.header__searchInput{
+    height: 12px;
+    padding:10px;
+    border:none;
+    width:100%;
+}
