@@ -5,11 +5,11 @@ function Navbar() {
         <nav className="header">
             {/* logo on the left -> */}
             <img className="header___logo" 
-            src = "src\img\amazon_PNG11.png"
+            src = "http://pngimg.com/uploads/amazon/amazon_PNG11.png"
             alt = "amazon logo"
             />
 
-            
+
             {/* Search box */}
 
 
