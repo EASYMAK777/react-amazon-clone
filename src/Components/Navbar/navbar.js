@@ -59,7 +59,7 @@ function Navbar() {
                         {/* Cart Icon */}
                         <ShoppingBasketIcon />
                         {/* Number of Items in cart */}
-                        <span>0</span>
+                        <span className="header__option2_basketCount">0</span>
                     </div>
                 </Link>
             </div>
