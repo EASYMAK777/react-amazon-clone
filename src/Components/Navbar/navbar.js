@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "../Navbar/Navbar.css"
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
+import { ShoppingBasket } from '@material-ui/icons';
 
 function Navbar() {
     return (
@@ -43,7 +45,7 @@ function Navbar() {
                 </Link>
                 
                 {/* 3rd Link */}
-                <Link to="/login" className="header__link">
+                <Link to="/" className="header__link">
                     <div className="header__option">
                         <span className="header__option1">Your</span>
                         <span className="header__option2">Prime</span>
@@ -52,10 +54,12 @@ function Navbar() {
 
                 
                 {/* 4th Link */}
-                <Link to="/login" className="header__link">
-                    <div className="header__option">
-                        <span className="header__option1">Hello Juan</span>
-                        <span className="header__option2">Sign-In</span>
+                <Link to="/chekcout" className="header__link">
+                    <div className="header_basket">
+                        {/* Cart Icon */}
+                        <ShoppingBasketIcon />
+                        {/* Number of Items in cart */}
+                        <span>0</span>
                     </div>
                 </Link>
             </div>
