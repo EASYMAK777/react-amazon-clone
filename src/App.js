@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './App.css';
+import Header from "./Components/Navbar/Navbar"
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -14,12 +15,13 @@ function App() {
             <h1>Checkout</h1>
           </Route>
 
-          <Router path="/login">
+          <Route path="/login">
             <h1>Login Page</h1>
-          </Router>
+          </Route>
 
           {/* This is the default route */}
           <Route path="/">
+            <Header />
             <h1>HOME PAGE!!!!</h1>
           </Route>
         </Switch>
@@ -27,6 +29,7 @@ function App() {
     </Router>
   );
 }
+            
 
 export default App;
 
