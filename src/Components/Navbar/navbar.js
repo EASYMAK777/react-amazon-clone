@@ -24,7 +24,21 @@ function Navbar() {
 
             {/* 3 Links top right corner of nav */}
             <div className="headernav">
+                {/* 1st Link */}
+                <Link className="header__link">
+                    <div className="header__option">
+                        <span>Hello Juan</span>
+                        <span>Sign-In</span>
+                    </div>
+                </Link>
+
+
+                {/* 2nd Link */}
                 
+                {/* 3rd Link */}
+                
+                {/* 4th Link */}
+
             </div>
             
 
