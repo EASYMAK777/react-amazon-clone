@@ -22,10 +22,13 @@ function Navbar() {
             <SearchIcon className="header__searchIcon" />
 
 
+            {/* 3 Links top right corner of nav */}
+            <div className="headernav">
+                
+            </div>
             
 
 
-            {/* 3 Links */}
             {/* Basket icon with a number */}
             
         </nav>
