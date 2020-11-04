@@ -12,10 +12,12 @@ function App() {
         <Switch>
 
           <Route path="/checkout">
+            <Header />
             <h1>Checkout</h1>
           </Route>
 
           <Route path="/login">
+            <Header />
             <h1>Login Page</h1>
           </Route>
 
