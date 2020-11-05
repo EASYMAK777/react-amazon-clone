@@ -1,0 +1,18 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+
+
+
+
+.home__image {
+    width: 100%;
+    min-width: 100%;
+}
+
+img{
+    width: 100%;
+    object-position: contain;
+    display: flex;
+    overflow: hidden;
+}
+

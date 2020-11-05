@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "../Navbar/Navbar.css"
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
-import { ShoppingBasket } from '@material-ui/icons';
+
 
 function Navbar() {
     return (

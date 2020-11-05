@@ -2,6 +2,7 @@
 import React from 'react'
 import './App.css';
 import Header from "./Components/Navbar/Navbar"
+import Home from './Components/Home/Home'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
@@ -12,17 +13,19 @@ function App() {
         <Switch>
 
           <Route path="/checkout">
+            <Header />
             <h1>Checkout</h1>
           </Route>
 
           <Route path="/login">
+            <Header />
             <h1>Login Page</h1>
           </Route>
 
           {/* This is the default route */}
           <Route path="/">
             <Header />
-            <h1>HOME PAGE!!!!</h1>
+            <Home />
           </Route>
         </Switch>
       </div>
@@ -32,6 +35,7 @@ function App() {
             
 
 export default App;
+            
 
 
         
