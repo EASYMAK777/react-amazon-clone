@@ -26,7 +26,6 @@ function App() {
           <Route path="/">
             <Header />
             <Home />
-            <h1>HOME PAGE!!!!</h1>
           </Route>
         </Switch>
       </div>
@@ -36,6 +35,7 @@ function App() {
             
 
 export default App;
+            
 
 
         
