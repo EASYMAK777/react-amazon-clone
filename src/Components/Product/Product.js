@@ -15,6 +15,7 @@ function Product({ id, title, image, price, rating }) {
                         .map((_) => (
                             <p>⭐</p>
                         ))}
+                        <img src ={image} alt="androids book"/>
                 </div>
             </p>
         </div>
