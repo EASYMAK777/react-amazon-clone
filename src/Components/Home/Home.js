@@ -3,6 +3,7 @@ import React from 'react'
  
 import "./Home.css"
 import Image0 from "../img/amazon.banner.jpg";
+import Image1 from "../img/androids.book.jpg"
 
 
 
@@ -16,6 +17,16 @@ function Home() {
             src={Image0} 
             alt="banner" 
             />
+
+            {/* Product id, title, price, rating, image */}
+            <Product
+                id="12342412"
+                title="Do Androids Dream of Electric Sheep"
+                price={11.99}
+                rating={5}
+                image={Image1} 
+            />
+
         </div>
         )
     }
