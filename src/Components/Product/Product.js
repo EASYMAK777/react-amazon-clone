@@ -17,8 +17,8 @@ function Product({ id, title, image, price, rating }) {
                         .map((_) => (
                             <p>⭐</p>
                         ))}
-                       <div className="product__image">
-                        <img src ={image} alt="androids book"/>
+                       <div className="product__image-section">
+                        <img src ={image} className="product__image" alt="androids book"/>
                         <button>Add to basket</button>
                         </div> 
                            

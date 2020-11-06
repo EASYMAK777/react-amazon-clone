@@ -2,17 +2,21 @@
     display: flex;
 }
 
+.product__info{
+    height: 100px;
+    margin-bottom: 15px;
+}
+
 .product {
     display: flex;
     flex-direction: column;
 }
 
-.product > img{
-     max-width: 100%;
+.product__image{
     max-height: 200px;
+    width: 100%;
     object-fit: contain;
-    margin-bottom: 25px;
-    margin-right: 1000px
+    margin-bottom: 15px;
 }
 
 .product__price{
