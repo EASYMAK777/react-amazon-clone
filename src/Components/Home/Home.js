@@ -15,7 +15,8 @@ function Home() {
     return (
         <div className="home__image">   
             <img 
-            src={Image0} 
+            src={Image0}
+            className="actual__banner" 
             alt="banner" 
             />
 

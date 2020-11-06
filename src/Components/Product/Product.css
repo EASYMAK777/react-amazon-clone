@@ -13,10 +13,10 @@
 }
 
 .product__image{
-    max-height: 200px;
+    max-height: 400px;
     width: 100%;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .product__price{
@@ -27,4 +27,5 @@ button{
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734, #9c7e31, #746a38 ;
+    margin-left: 40px;
 }
