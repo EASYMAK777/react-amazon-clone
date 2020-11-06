@@ -27,5 +27,6 @@ button{
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734, #9c7e31, #746a38 ;
-    margin-left: 40px;
+    margin-left: 110px;
+    display: flex;
 }
