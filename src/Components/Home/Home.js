@@ -4,7 +4,7 @@ import React from 'react'
 import "./Home.css"
 import Product from "../Product/Product"
 import Image0 from "../img/amazon.banner.jpg";
-import Image1 from "../img/androids.book.jpg"
+import Image1 from "../img/do.androids.book.jpg"
 
 
 
