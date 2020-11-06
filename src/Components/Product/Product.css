@@ -1,5 +1,20 @@
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
 .product__rating{
     display: flex;
+    max-height: 200px;
+    width: 100%;
+    min-width: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .product__info{
@@ -7,16 +22,15 @@
     margin-bottom: 15px;
 }
 
-.product {
-    display: flex;
-    flex-direction: column;
-}
-
 .product__image{
-    max-height: 400px;
+     max-height: 200px;
     width: 100%;
+    min-width: 100px;
     object-fit: contain;
     margin-bottom: 20px;
+    margin-top: 50px; 
+    
+   
 }
 
 .product__price{
