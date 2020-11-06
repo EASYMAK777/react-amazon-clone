@@ -13,7 +13,7 @@ import Image1 from "../img/do.androids.book.jpg"
 
 function Home() {
     return (
-        <div className="home__image">   
+        <div className="home">   
             <img 
             src={Image0}
             className="actual__banner" 
@@ -21,13 +21,28 @@ function Home() {
             />
 
             {/* Product id, title, price, rating, image */}
+
+           <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                />
+               
+               
+               
+
+            {/* Second product */}
             <Product
                 id="12342412"
                 title="Do Androids Dream of Electric Sheep"
                 price={11.99}
                 rating={5}
                 image={Image1} 
-            />
+                />
+           </div> 
 
         </div>
         )
