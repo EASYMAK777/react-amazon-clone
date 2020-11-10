@@ -19,7 +19,7 @@ function Product({ id, title, image, price, rating }) {
                         ))}
                        <div className="product__image-section">
                         <img src ={image} className="product__image" alt="androids book"/>
-                        <button>Add to basket</button>
+                        <button className="button">Add to basket</button>
                     </div> 
                            
                 </div>
