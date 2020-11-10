@@ -13,11 +13,16 @@
 .product__row{
      background-color: white;
      margin-top: 20px;
-    margin-left: 450px;
-    display: inline table;
-    justify-content: center;
-    display: flex;
+     justify-content: center;
+     display: flex;
+
+    
   
+ }
+
+ .home__row{
+     margin-right: 25px;
+     
  }
 
 

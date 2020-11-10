@@ -40,7 +40,7 @@ function Home() {
                
 
                     {/* Second product */}
-                    <div className="home__row">
+                    <div className="home__row1">
                         <Product
                             id="12342412"
                             title="Do Androids Dream of Electric Sheep"
