@@ -3,7 +3,7 @@ import "./Product.css"
 
 function Product({ id, title, image, price, rating }) {
     return (
-        <div className="product">
+        <div className="product__element">
             <div className="product__info">
             <p>{title}</p>
             <p className="product__price">
@@ -20,7 +20,7 @@ function Product({ id, title, image, price, rating }) {
                        <div className="product__image-section">
                         <img src ={image} className="product__image" alt="androids book"/>
                         <button>Add to basket</button>
-                        </div> 
+                    </div> 
                            
                 </div>
             </p>

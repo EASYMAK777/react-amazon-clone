@@ -1,12 +1,14 @@
 
-.product {
+.product__element {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    z-index: 0;
+}
+    
 
     
-}
 .product__rating{
     display: flex;
     max-height: 200px;
@@ -15,26 +17,32 @@
     object-fit: contain;
     margin-bottom: 20px;
     margin-top: 50px;
+    background-color: white;
+    z-index: 0;
 }
 
 .product__info{
     height: 100px;
     margin-bottom: 15px;
+    z-index: 0;
 }
 
 .product__image{
-     max-height: 200px;
+    max-height: 200px;
     width: 100%;
     min-width: 100px;
     object-fit: contain;
     margin-bottom: 20px;
-    margin-top: 50px; 
-    
+    margin-top: 50px;
+    background-color: white; 
+    z-index: 0;
    
 }
 
 .product__price{
     margin-top: 15px;
+    background-color: white;
+    z-index: 0;
 }
 
 button{
@@ -43,4 +51,16 @@ button{
     border-color: #a88734, #9c7e31, #746a38 ;
     margin-left: 110px;
     display: flex;
+    
 }
+
+p{
+    z-index: 0;
+    background-color: white;
+    margin-bottom: -20px;
+
+}
+
+/* .product__row {
+    background-color: white;
+} */

@@ -21,28 +21,37 @@ function Home() {
             />
 
             {/* Product id, title, price, rating, image */}
+            <div className ="product__row">
 
-           <div className="home__row">
-                <Product
-                    id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
-                    rating={5}
-                    image={Image1} 
-                />
+
+                    <div className="home__row">
+                        <Product
+                            id="12342412"
+                            title="Do Androids Dream of Electric Sheep"
+                            price={11.99}
+                            rating={5}
+                            image={Image1} 
+                            />
+                    </div> 
+
+                
                
                
                
 
-            {/* Second product */}
-            <Product
-                id="12342412"
-                title="Do Androids Dream of Electric Sheep"
-                price={11.99}
-                rating={5}
-                image={Image1} 
-                />
-           </div> 
+                    {/* Second product */}
+                    <div className="home__row">
+                        <Product
+                            id="12342412"
+                            title="Do Androids Dream of Electric Sheep"
+                            price={11.99}
+                            rating={5}
+                            image={Image1} 
+                            />
+                    </div>
+            </div>
+
+
 
         </div>
         )
