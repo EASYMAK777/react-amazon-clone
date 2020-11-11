@@ -6,7 +6,7 @@
     margin-right: auto;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     z-index: -1;
-    margin-bottom: -350px;
+    margin-bottom: -345px;
 }
 
 
@@ -24,8 +24,46 @@
      margin-right: 25px;
      
  }
+
+ .home__row2{
+    background-color: white;
+    margin-top: 250px;
+    justify-content: center;
+    display: inline-block;
+    
+
+ }
+
+ .home__row3{
+    background-color: white;
+    margin-top: 250px;
+    justify-content: center;
+    display: inline-block;
+
+ }
  
+ .home__row4{
+    background-color: white;
+    margin-top: 250px;
+    justify-content: center;
+    display: inline-block;
+
+ }
+
+ .home__row5{
+    background-color: white;
+    margin-top: 250px;
+    justify-content: center;
+    display: inline-block;
+
+ }
+
+ .row2{
+    margin-left: 400px;
+    margin-top: 50px;
+    background-color: white;
+
+ }
+
+
  
-
-
-
