@@ -1,4 +1,67 @@
 
+.product{
+    display: flex;
+    flex-direction: column;
+}
+
+.product__rating {
+    display: flex;
+}
+
+.product > img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .product {
     display: flex;
     flex-direction: column;
@@ -58,4 +121,4 @@ p {
     z-index: 0;
     background-color: white;
 }
-
+ */

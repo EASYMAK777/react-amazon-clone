@@ -40,7 +40,7 @@ function Home() {
                
 
                     {/* Second product */}
-                    {/* <div className="home__row">
+                     <div className="home__row">
                         <Product
                             id="12342412"
                             title="Do Androids Dream of Electric Sheep"
@@ -48,7 +48,7 @@ function Home() {
                             rating={5}
                             image={Image1} 
                             />
-                    </div> */}
+                    </div> 
 
 
                     
