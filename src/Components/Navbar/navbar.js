@@ -1,11 +1,19 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "../Navbar/Navbar.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "../Navbar/Navbar.css";
 import SearchIcon from '@material-ui/icons/Search';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { useStateValue } from "../StateProvider/StateProvider";
 
 
 function Navbar() {
+    //uses state provider to add functionality to shopping basket
+    // dispatch allows for appending and removing items from basket
+    const [{ basket }, dispatch] = useStateValue();
+
+    // Console logging object in the shopping basket
+    console.log(basket);
+    
     return (
         <nav className="header">
             {/* logo on the left -> */}
@@ -59,7 +67,7 @@ function Navbar() {
                         {/* Cart Icon */}
                         <ShoppingBasketIcon />
                         {/* Number of Items in cart */}
-                        <span className="header__option2_basketCount">0</span>
+    <span className="header__option2_basketCount">{basket?.length}</span>
                     </div>
                 </Link>
             </div>
