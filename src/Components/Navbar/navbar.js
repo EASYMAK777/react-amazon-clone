@@ -7,7 +7,10 @@ import { useStateValue } from "../StateProvider/StateProvider";
 
 
 function Navbar() {
-    const [{ basket }] = useStateValue();
+    //uses state provider to add functionality to shopping basket
+    // dispatch allows for appending and removing items from basket
+    const [{ basket }, dispatch] = useStateValue();
+    
     return (
         <nav className="header">
             {/* logo on the left -> */}
