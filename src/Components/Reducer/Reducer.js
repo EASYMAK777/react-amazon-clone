@@ -1,6 +1,6 @@
 export const initialState = {
     basket:[],
-    // user:null
+    user:null
 };
 
 const reducer = (state, action) => {
@@ -10,7 +10,7 @@ const reducer = (state, action) => {
         //Logic for adding item to basket 
         return { 
             ...state,
-            basket: [...state.basket, action.item]
+            basket: [...state.basket, action.item],
         };
        
      case 'REMOVE_FROM_BASKET':

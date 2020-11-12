@@ -10,6 +10,9 @@ function Navbar() {
     //uses state provider to add functionality to shopping basket
     // dispatch allows for appending and removing items from basket
     const [{ basket }, dispatch] = useStateValue();
+
+    // Console logging object in the shopping basket
+    console.log(basket);
     
     return (
         <nav className="header">
