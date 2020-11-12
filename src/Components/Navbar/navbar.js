@@ -1,11 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import "../Navbar/Navbar.css"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "../Navbar/Navbar.css";
 import SearchIcon from '@material-ui/icons/Search';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket'
+import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { useStateValue } from "../StateProvider/StateProvider";
 
 
 function Navbar() {
+    const [{ basket }] = useStateValue();
     return (
         <nav className="header">
             {/* logo on the left -> */}
