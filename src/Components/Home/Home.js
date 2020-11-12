@@ -13,27 +13,92 @@ import Image1 from "../img/do.androids.book.jpg"
 
 function Home() {
     return (
-        <div className="home__image">   
+        <div className="home">   
             <img 
-            src={Image0} 
+            src={Image0}
+            className="home__image" 
             alt="banner" 
             />
 
-            {/* Product id, title, price, rating, image */}
-            <Product
-                id="12342412"
-                title="Do Androids Dream of Electric Sheep"
-                price={11.99}
-                rating={5}
-                image={Image1} 
-            />
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+            </div> 
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />    
+            </div> 
 
+
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+            </div> 
+                
+            
+            
+            
+
+            
+             
         </div>
         )
     }
     
     export default Home
     
+            
+
+
+                
+               
+               
+               
+
+                    
+
+
+                    
+            
+
+
+
 
              
     
