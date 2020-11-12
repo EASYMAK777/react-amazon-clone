@@ -2,7 +2,6 @@
 // Basket Tracking
 import { createContext } from "react";
 
-
 // This is the data layer
 export const StateContext = createContext();
 
