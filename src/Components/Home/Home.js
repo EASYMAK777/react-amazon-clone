@@ -16,52 +16,53 @@ function Home() {
         <div className="home">   
             <img 
             src={Image0}
-            className="actual__banner" 
+            className="home__image" 
             alt="banner" 
             />
 
-            {/* Product id, title, price, rating, image */}
-            <div className ="product__row">
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+            </div> 
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Do Androids Dream of Electric Sheep"
+                    price={11.99}
+                    rating={5}
+                    image={Image1} 
+                    />
+            </div> 
 
-
-                    <div className="home__row">
-                        <Product
-                            id="12342412"
-                            title="Do Androids Dream of Electric Sheep"
-                            price={11.99}
-                            rating={5}
-                            image={Image1} 
-                            />
-                    </div> 
-
-                
-               
-               
-               
-
-                    {/* Second product */}
-                     <div className="home__row">
-                        <Product
-                            id="12342412"
-                            title="Do Androids Dream of Electric Sheep"
-                            price={11.99}
-                            rating={5}
-                            image={Image1} 
-                            />
-                    </div> 
-
-
-                    
-            </div>
-
-
-
+            
+             
         </div>
         )
     }
     
     export default Home
     
+            
+
+
+                
+               
+               
+               
+
+                    
+
+
+                    
+            
+
+
+
 
              
     
