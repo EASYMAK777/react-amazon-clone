@@ -1,4 +1,6 @@
 export const initialState = {
     basket:{},
-    user:null
-}
+    // user:null
+};
+
+function reducer(state, action)
