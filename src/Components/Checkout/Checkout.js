@@ -21,7 +21,7 @@ function Checkout() {
                  </p>
              </div>
            ) : (
-               <div>
+                <div>
                    <h2 className="checkout__title">Your Shopping Basket</h2>
 
                    {/* List out all of the checkout Products */}
@@ -33,13 +33,14 @@ function Checkout() {
                      price={item.price}
                      rating={item.rating}
                     />
-
                     ))}
-               </div>
-           )}
-           
+                </div>
+            )}
         </div>
-    )
+    );
 }
 
 export default Checkout
+                     
+           
+
