@@ -23,6 +23,14 @@ function Checkout() {
            ) : (
                <div>
                    <h2 className="checkout__title">Your Shopping Basket</h2>
+
+                   {/* List out all of the checkout Products */}
+                    {basket.map(item => (
+                    <CheckoutProduct
+                     item={item.id}
+                    />
+
+                    ))}
                </div>
            )}
            
