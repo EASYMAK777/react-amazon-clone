@@ -1,5 +1,6 @@
 import React from 'react'
 import Image200 from '../img/Amazon.ad.jpg'
+import './Checkout.css'
 
 function Checkout() {
 
