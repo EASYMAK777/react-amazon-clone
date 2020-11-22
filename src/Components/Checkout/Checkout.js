@@ -9,7 +9,9 @@ function Checkout() {
         <div className="checkout">
            <img className="checkout__ad" 
            src={Image200} 
-           alt="image"/>
+           alt="image"
+           />
+           <h1>Test</h1>
            
         </div>
     )
