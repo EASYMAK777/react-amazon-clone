@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CheckoutProduct() {
+function CheckoutProduct({id,title,image,price,rating}) {
     return (
         <div>
             

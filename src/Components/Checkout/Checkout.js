@@ -2,6 +2,7 @@ import React from 'react'
 import Image200 from '../img/Amazon.ad.jpg'
 import './Checkout.css'
 import useStateValue from '../Reducer/Reducer'
+import CheckoutProduct from '../CheckoutProduct/CheckoutProduct'
 
 function Checkout() {
 
