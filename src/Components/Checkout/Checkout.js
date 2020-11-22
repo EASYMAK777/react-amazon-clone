@@ -1,15 +1,15 @@
 import React from 'react'
+import Image200 from '../img/Amazon.ad.jpg'
 
 function Checkout() {
 
-    const [{ basket }] = useStateValue();
+    // const [{ basket }] = useStateValue();
     return (
         <div className="checkout">
            <img className="checkout__ad" 
-           src="https://images-na.ssl-images-amazon.com/
-           images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423494660_.jpg" 
-           alt="image">
-          </img> 
+           src={Image200} 
+           alt="image"/>
+           
         </div>
     )
 }
