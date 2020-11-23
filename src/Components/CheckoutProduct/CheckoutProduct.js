@@ -11,7 +11,15 @@ function CheckoutProduct({id,title,image,price,rating}) {
               <p className="checkoutProduct__price">
                 <small>$</small>
                 <strong>{price}</strong>    
-              </p> 
+              </p>
+              <div className="checkoutProduct__rating">
+                {Array(rating)
+                    .fill()
+                    .map((_) => (
+                        <p>⭐</p>
+                    ))}
+                        
+              </div> 
             </div>            
         </div>
     )
