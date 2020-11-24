@@ -1,7 +1,7 @@
 import React from 'react'
 import Image200 from '../img/Amazon.ad.jpg'
 import './Checkout.css'
-import useStateValue from '../Reducer/Reducer'
+import { useStateValue } from '../StateProvider/StateProvider'
 import CheckoutProduct from '../CheckoutProduct/CheckoutProduct'
 
 function Checkout() {
@@ -21,7 +21,7 @@ function Checkout() {
                     "Add to basket" next to the item.
                  </p>
              </div>
-           ) : (
+            ) : (
                 <div>
                    <h2 className="checkout__title">Your Shopping Basket</h2>
 
@@ -34,9 +34,9 @@ function Checkout() {
                      price={item.price}
                      rating={item.rating}
                     />
-                    ))}
+                    ))} 
                 </div>
-            )}
+            )} 
         </div>
     );
 }
