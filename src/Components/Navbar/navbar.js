@@ -62,7 +62,7 @@ function Navbar() {
 
                 
                 {/* 4th Link */}
-                <Link to="/chekcout" className="header__link">
+                <Link to="/checkout" className="header__link">
                     <div className="header_basket">
                         {/* Cart Icon */}
                         <ShoppingBasketIcon />
