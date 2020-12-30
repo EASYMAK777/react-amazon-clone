@@ -4,7 +4,10 @@ import React from 'react'
 import "./Home.css"
 import Product from "../Product/Product"
 import Image0 from "../img/blistlyfe-logo-3.jpg";
-import Image1 from "../img/blistlyfe-logo-2.jpg"
+import Image1 from "../img/blistlyfe-logo-2.jpg";
+
+import Carousel from '../ImageGallery/ImageGallery'
+import '../ImageGallery/ImageGallery.css'
 
 
 
@@ -19,6 +22,11 @@ function Home() {
             className="home__image" 
             alt="banner" 
             />
+
+            {/* <div className = "carousel"> */}
+                <Carousel/>
+
+            {/* </div> */}
 
             <div className="home__row">
                 <Product
