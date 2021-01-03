@@ -5,6 +5,11 @@ import "./Home.css"
 import Product from "../Product/Product"
 import Image0 from "../img/blistlyfe-logo-3.jpg";
 import Image1 from "../img/blistlyfe-logo-2.jpg";
+import Cheezit from "../img/cheez-its.jpg";
+import Doritos from "../img/doritos.jpg";
+import Oreos from "../img/oreos.jpg";
+import Pebbles from "../img/Fruity-Pebble-Cereal-Treats-Recipe-3.jpg"
+import Sourpatch from "../img/sourpatch.jpg"
 
 import Carousel from '../ImageGallery/ImageGallery'
 import '../ImageGallery/ImageGallery.css'
@@ -34,14 +39,14 @@ function Home() {
                     title="Do Androids Dream of Electric Sheep"
                     price={11.99}
                     rating={5}
-                    image={Image1} 
+                    image={Cheezit} 
                     />
                 <Product
                     id="12342412"
                     title="Do Androids Dream of Electric Sheep"
                     price={11.99}
                     rating={5}
-                    image={Image1} 
+                    image={Pebbles} 
                     />
             </div> 
             <div className="home__row">
@@ -50,21 +55,21 @@ function Home() {
                     title="Do Androids Dream of Electric Sheep"
                     price={11.99}
                     rating={5}
-                    image={Image1} 
+                    image={Oreos} 
                     />
                 <Product
                     id="12342412"
                     title="Do Androids Dream of Electric Sheep"
                     price={11.99}
                     rating={5}
-                    image={Image1} 
+                    image={Sourpatch} 
                     />
                 <Product
                     id="12342412"
                     title="Do Androids Dream of Electric Sheep"
                     price={11.99}
                     rating={5}
-                    image={Image1} 
+                    image={Doritos} 
                     />    
             </div> 
 
@@ -75,7 +80,7 @@ function Home() {
                     title="Do Androids Dream of Electric Sheep"
                     price={11.99}
                     rating={5}
-                    image={Image1} 
+                    image={Doritos} 
                     />
             </div> 
                 
