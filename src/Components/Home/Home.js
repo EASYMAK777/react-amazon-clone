@@ -36,15 +36,15 @@ function Home() {
             <div className="home__row">
                 <Product
                     id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
+                    title="Cheez-itz"
+                    price={15.99}
                     rating={5}
                     image={Cheezit} 
                     />
                 <Product
                     id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
+                    title="Fruity Pebbles"
+                    price={15.99}
                     rating={5}
                     image={Pebbles} 
                     />
@@ -52,22 +52,22 @@ function Home() {
             <div className="home__row">
                 <Product
                     id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
+                    title="Oreos"
+                    price={25.99}
                     rating={5}
                     image={Oreos} 
                     />
                 <Product
                     id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
+                    title="Sour Patch Kids"
+                    price={25.99}
                     rating={5}
                     image={Sourpatch} 
                     />
                 <Product
                     id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
+                    title="Doritos"
+                    price={18.99}
                     rating={5}
                     image={Doritos} 
                     />    
@@ -77,8 +77,8 @@ function Home() {
             <div className="home__row">
                 <Product
                     id="12342412"
-                    title="Do Androids Dream of Electric Sheep"
-                    price={11.99}
+                    title="Doritos Variety Pack"
+                    price={299.99}
                     rating={5}
                     image={Doritos} 
                     />
