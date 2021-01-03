@@ -50,12 +50,12 @@ function Navbar() {
             <div className="header__nav">
                 
                 {/* 1st Link */}
-                <Link to="/login" className="header__link">
+                {/* <Link to="/login" className="header__link">
                     <div className="header__option">
                         <span className="header__option1">Hello Juan</span>
                         <span className="header__option2">Sign-In</span>
                     </div>
-                </Link>
+                </Link> */}
 
 
                 {/* 2nd Link */}
@@ -67,21 +67,23 @@ function Navbar() {
                 </Link> */}
                 
                 {/* 3rd Link */}
-                {/* <Link to="/" className="header__link">
+                <Link to="/" className="header__link">
                     <div className="header__option">
                         <span className="header__option1">Your</span>
                         <span className="header__option2">Prime</span>
                     </div>
-                </Link> */}
+                </Link>
 
                 
                 {/* 4th Link */}
-                <Link to="/chekcout" className="header__link">
+                <Link to="/checkout" className="header__link">
                     <div className="header_basket">
                         {/* Cart Icon */}
                         <ShoppingBasketIcon />
                         {/* Number of Items in cart */}
-    <span className="header__option2_basketCount">{basket?.length}</span>
+                        <span className="header__option2_basketCount">
+                            {basket?.length}
+                        </span>
                     </div>
                 </Link>
             </div>
