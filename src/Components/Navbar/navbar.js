@@ -5,6 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from "../StateProvider/StateProvider";
 import logo from "../img/blistlyfe-logo.jpg"
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 function Navbar() {
     //uses state provider to add functionality to shopping basket
@@ -38,9 +39,7 @@ function Navbar() {
             </div> */}
 
             <div className="header__title">
-            <a href="https://fontmeme.com/fonts/marijuana-font/"><img src="https://fontmeme.com/permalink/201230/47530d0921ea1664ae19680ae0bcb309.png" 
-             alt="marijuana-font" 
-             border="0"/></a>
+            <h1>Blistlyfe</h1>
             </div>
 
             
@@ -50,21 +49,21 @@ function Navbar() {
             <div className="header__nav">
                 
                 {/* 1st Link */}
-                {/* <Link to="/login" className="header__link">
+                <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span className="header__option1">Hello Juan</span>
-                        <span className="header__option2">Sign-In</span>
+                        <span className="header__option1">Home</span>
+                        
                     </div>
-                </Link> */}
+                </Link>
 
 
                 {/* 2nd Link */}
-                {/* <Link to="/login" className="header__link">
+                <Link to="/login" className="header__link">
                     <div className="header__option">
-                        <span className="header__option1"> Returns</span>
-                        <span className="header__option2">& Orders</span>
+                        <span className="header__option1"> Order</span>
+                        <span className="header__option2">Online</span>
                     </div>
-                </Link> */}
+                </Link>
                 
                 {/* 3rd Link */}
                 <Link to="/" className="header__link">
@@ -79,11 +78,19 @@ function Navbar() {
                 <Link to="/checkout" className="header__link">
                     <div className="header_basket">
                         {/* Cart Icon */}
-                        <ShoppingBasketIcon />
+                        <ShoppingCartIcon />
                         {/* Number of Items in cart */}
                         <span className="header__option2_basketCount">
                             {basket?.length}
                         </span>
+                    </div>
+                </Link>
+
+                {/* 3rd Link */}
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__option1">FAQ</span>
+                        
                     </div>
                 </Link>
             </div>
