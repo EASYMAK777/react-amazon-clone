@@ -73,7 +73,36 @@ function Home() {
                     />    
             </div> 
 
+            
 
+
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Doritos Variety Pack"
+                    price={299.99}
+                    rating={5}
+                    image={Doritos} 
+                    />
+            </div> 
+            <div className="home__row">
+                <Product
+                    id="12342412"
+                    title="Cheez-itz"
+                    price={15.99}
+                    rating={5}
+                    image={Cheezit} 
+                    />
+                <Product
+                    id="12342412"
+                    title="Fruity Pebbles"
+                    price={15.99}
+                    rating={5}
+                    image={Pebbles} 
+                    />
+            </div> 
+
+            
             <div className="home__row">
                 <Product
                     id="12342412"
