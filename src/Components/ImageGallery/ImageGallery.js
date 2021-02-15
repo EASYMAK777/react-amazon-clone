@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
 import Cheezit from '../img/cheez-its.jpg';
 import Doritos from "../img/doritos.jpg";
+import Oreos from "../img/oreos.jpg";
 
 class ImageGallery extends React.Component {
 
@@ -46,7 +47,7 @@ class ImageGallery extends React.Component {
                 >
                     <div>
                         <img 
-                         src={Cheezit}
+                         src={Oreos}
                          alt="product-image"
                          className="carousel__product"
                         />
