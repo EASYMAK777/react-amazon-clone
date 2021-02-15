@@ -25,7 +25,7 @@ const Reducer = (state, action) => {
     // return { state };
     const index = state.basket.findIndex(
         (basketItem) => basketItem.id === action.id
-    );
+    ); 
     default:
         return state;
     }
