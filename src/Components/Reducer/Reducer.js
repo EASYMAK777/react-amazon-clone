@@ -22,7 +22,10 @@ const Reducer = (state, action) => {
        
      case 'REMOVE_FROM_BASKET':
         //  Logic for removing item from basket
-        return { state };
+    // return { state };
+    const index = state.basket.findIndex(
+        (basketItem) => basketItem.id === action.id
+    );
     default:
         return state;
     }
