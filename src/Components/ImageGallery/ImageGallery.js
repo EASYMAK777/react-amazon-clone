@@ -1,6 +1,8 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
+import Cheezit from '../img/cheez-its.jpg';
+import Doritos from "../img/doritos.jpg";
 
 class ImageGallery extends React.Component {
 
@@ -43,17 +45,24 @@ class ImageGallery extends React.Component {
                     
                 >
                     <div>
-                        <img src="https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/s150x150/105972792_805750909958786_504637890774604643_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=qvjKVESNLMoAX9dSCKr&tp=1&oh=1c64cc58031935bc9018df36b4e0cf05&oe=600D726B" 
+                        <img 
+                         src={Cheezit}
                          alt="product-image"
                          className="carousel__product"
                         />
                     </div>
                     <div>
-                        <img src ="https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/s150x150/105972792_805750909958786_504637890774604643_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=qvjKVESNLMoAX9dSCKr&tp=1&oh=1c64cc58031935bc9018df36b4e0cf05&oe=600D726B" 
+                        <img src = {Doritos}
                          alt="product-image"
                          className="carousel__product"
                         />
                     </div>
+                    {/* <div>
+                        <img src = {Doritos}
+                         alt="product-image"
+                         className="carousel__product"
+                        />
+                    </div> */}
                 </Carousel>
             </div>
         )

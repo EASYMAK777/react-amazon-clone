@@ -4,7 +4,7 @@ import "../Navbar/Navbar.css";
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from "../StateProvider/StateProvider";
-
+import logo from "../img/blistlyfe-logo.jpg"
 
 function Navbar() {
     //uses state provider to add functionality to shopping basket
@@ -19,7 +19,7 @@ function Navbar() {
             {/* logo on the left -> */}
             <Link to="/">
             <img className="header__logo"
-                src = "https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/s150x150/105972792_805750909958786_504637890774604643_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_ohc=qvjKVESNLMoAX9dSCKr&tp=1&oh=1c64cc58031935bc9018df36b4e0cf05&oe=600D726B"
+                src = {logo}
                 alt = "blist-lyfe-logo"
             />
             </Link>
