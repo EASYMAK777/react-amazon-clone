@@ -22,5 +22,7 @@ const db = firebaseApp.firestore();
 // variable to handle all firebase login and register
 const auth = firebase.auth();
 
+// exporting db and auth to  be used on sign in page
+
 export {db}
 export {auth}
