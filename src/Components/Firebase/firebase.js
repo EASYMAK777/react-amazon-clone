@@ -13,6 +13,14 @@ const firebaseConfig = {
     measurementId: "G-LJ3FVQGG3F"
   };
 
+//   variable to initialize firebase function
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
+// variable to initialize database from firebase
 const db = firebaseApp.firestore();
+
+// variable to handle all firebase login and register
+const auth = firebase.auth();
+
+export {db}
+export {auth}
