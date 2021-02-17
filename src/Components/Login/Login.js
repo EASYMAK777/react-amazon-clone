@@ -1,13 +1,14 @@
 import React , { useState }from 'react'
 import './Login.css'
 import logo from "../img/blistlyfe-logo.jpg"
-import { Link } from "react-router-dom"
-import { auth } from "./firebase"
+import { Link, useHistory } from "react-router-dom"
+import { auth } from "../Firebase/firebase"
 import { ContactsOutlined } from '@material-ui/icons'
 
 
 function Login() {
 
+    const history = useHistory();
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
 
@@ -26,8 +27,10 @@ function Login() {
     auth.createUserWithEmailAndPassword(email,password)
     .then((auth) => {
         //if user creation is successfull
+        
         console.log(auth);
     })
+    // .catch(error => alert(error.message))
 
     return (
         <div className="login">
