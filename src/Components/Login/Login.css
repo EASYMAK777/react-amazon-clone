@@ -42,3 +42,10 @@
     background-color: white;
     width: 98%;
 }
+
+.login__container > p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+
