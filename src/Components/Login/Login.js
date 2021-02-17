@@ -12,7 +12,15 @@ function Login() {
                 src={ logo }
                 />
             </Link>
-            <h1>Login Page</h1>
+
+            <div className="login__container">
+                <h1>Login </h1>
+
+                <form>
+                    
+                </form>
+
+            </div>
         </div>
     )
 }
