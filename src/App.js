@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
 
           <Route path="/checkout">
@@ -21,13 +21,18 @@ function App() {
           </Route>
 
           <Route path="/login">
-            
+          <Navbar />
             <h1>Login Page</h1>
+          </Route>
+
+          <Route path="/order-online">
+          <Navbar />
+            <h1>Order Online</h1>
           </Route>
 
           {/* This is the default route */}
           <Route path="/">
-          
+          <Navbar />
             <Home />
           </Route>
         </Switch>
