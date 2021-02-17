@@ -53,7 +53,7 @@ function Login() {
                     {/* <p>By signing-in you agree to Blistlyfe's Conditions of Use & Sale</p> */}
 
                     <button
-                    onClick{ register }
+                    onClick = { register }
                     type="submit" 
                     className="login__registerButton">Dont have an account?  Create your Blistlyfe account</button>
 
