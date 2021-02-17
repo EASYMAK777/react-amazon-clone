@@ -24,7 +24,13 @@ function Login() {
                     <input type='password'/>
 
                     <button>Sign-in</button>
+
                 </form>
+                    {/* <p>By signing-in you agree to Blistlyfe's Conditions of Use & Sale</p> */}
+
+                    <button>Dont have an account?  Create your Blistlyfe account</button>
+
+
 
             </div>
         </div>
