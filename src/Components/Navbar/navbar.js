@@ -56,9 +56,18 @@ function Navbar() {
                     </div>
                 </Link>
 
+                {/* Login link */}
+
+                <Link to="/login" className="header__link">
+                    <div className="header__option">
+                        <span className="header__option1">Login</span>
+                        
+                    </div>
+                </Link>
+
 
                 {/* 2nd Link */}
-                <Link to="/login" className="header__link">
+                <Link to="/order-online" className="header__link">
                     <div className="header__option">
                         <span className="header__option1"> Order</span>
                         <span className="header__option2">Online</span>
