@@ -17,7 +17,8 @@ function Login() {
                 <h1>Login </h1>
 
                 <form>
-                    
+                    <h5>E-mail</h5>
+                    <input type='text'/>
                 </form>
 
             </div>
