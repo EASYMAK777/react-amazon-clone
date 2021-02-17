@@ -22,7 +22,26 @@ const Reducer = (state, action) => {
        
      case 'REMOVE_FROM_BASKET':
         //  Logic for removing item from basket
-        return { state };
+        // return { state };
+        const index = state.basket.findIndex(
+            (basketItem) => basketItem.id === action.id
+        );
+        let newBasket = [...state.basket];
+
+        if (index >= 0) {
+            newBasket.splice(index,1);
+
+        } else {
+            console.warn(
+                `Cant Remove Product (id: ${action.id}) as its not in the cart`
+            )
+        }
+
+        return {
+            ...state,
+            basket: newBasket
+        }
+
     default:
         return state;
     }

@@ -74,6 +74,14 @@ function Navbar() {
                 </Link> */}
 
                 
+                {/* 3rd Link */}
+                <Link to="/" className="header__link">
+                    <div className="header__option">
+                        <span className="header__option1">FAQ</span>
+                        
+                    </div>
+                </Link>
+
                 {/* 4th Link */}
                 <Link to="/checkout" className="header__link">
                     <div className="header_basket">
@@ -85,14 +93,6 @@ function Navbar() {
                         <span className="header__option2_basketCount">
                             {basket?.length}
                         </span>
-                    </div>
-                </Link>
-
-                {/* 3rd Link */}
-                <Link to="/" className="header__link">
-                    <div className="header__option">
-                        <span className="header__option1">FAQ</span>
-                        
                     </div>
                 </Link>
             </div>
