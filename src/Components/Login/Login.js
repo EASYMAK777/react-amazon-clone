@@ -10,7 +10,7 @@ function Login() {
     const [ password, setPassword ] = useState('');
 
     const signIn = e => {
-
+        e.preventDefault()
     }
 
     return (
