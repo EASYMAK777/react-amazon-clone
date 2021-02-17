@@ -31,7 +31,8 @@ function Login() {
                      onChange = { e=> setPassword(e.target.value)}
                     />
 
-                    <button className="login__signInButton">Sign-in</button>
+                    <button onClick={ signin } 
+                    className="login__signInButton">Sign-in</button>
 
                 </form>
                     {/* <p>By signing-in you agree to Blistlyfe's Conditions of Use & Sale</p> */}
