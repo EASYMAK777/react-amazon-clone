@@ -22,10 +22,10 @@ function Login() {
 
                 <form>
                     <h5>E-mail</h5>
-                    <input type='text'/>
+                    <input type='text' value = { email }/>
 
                     <h5>Password</h5>
-                    <input type='password'/>
+                    <input type='password' value = { password }/>
 
                     <button className="login__signInButton">Sign-in</button>
 
