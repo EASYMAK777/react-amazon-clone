@@ -1,9 +1,13 @@
-import React from 'react'
+import React , { useState }from 'react'
 import './Login.css'
 import logo from "../img/blistlyfe-logo.jpg"
 import { Link } from "react-router-dom"
 
+
 function Login() {
+
+    const [ email, setEmail ] = useState('');
+    const [ password, setPassword ] = useState('');
     return (
         <div className="login">
             <Link to ='/'>
