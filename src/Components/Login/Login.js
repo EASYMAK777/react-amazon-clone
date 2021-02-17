@@ -22,7 +22,8 @@ function Login() {
 
                 <form>
                     <h5>E-mail</h5>
-                    <input type='text' value = { email }/>
+                    <input type='text' value = { email } 
+                    onChange= {e => setEmail(e.target.value)}/>
 
                     <h5>Password</h5>
                     <input type='password' value = { password }/>
