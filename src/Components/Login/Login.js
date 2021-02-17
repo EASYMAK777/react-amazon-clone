@@ -8,6 +8,11 @@ function Login() {
 
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
+
+    const signIn = e => {
+
+    }
+
     return (
         <div className="login">
             <Link to ='/'>
@@ -31,7 +36,9 @@ function Login() {
                      onChange = { e=> setPassword(e.target.value)}
                     />
 
-                    <button onClick={ signin } 
+                    <button 
+                    type = "submit"
+                    onClick={ signIn } 
                     className="login__signInButton">Sign-in</button>
 
                 </form>
