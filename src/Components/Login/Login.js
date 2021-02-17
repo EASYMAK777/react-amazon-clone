@@ -23,12 +23,12 @@ function Login() {
                     <h5>Password</h5>
                     <input type='password'/>
 
-                    <button>Sign-in</button>
+                    <button className="login__signInButton">Sign-in</button>
 
                 </form>
                     {/* <p>By signing-in you agree to Blistlyfe's Conditions of Use & Sale</p> */}
 
-                    <button>Dont have an account?  Create your Blistlyfe account</button>
+                    <button className="login__registerButton">Dont have an account?  Create your Blistlyfe account</button>
 
 
 
