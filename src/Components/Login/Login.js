@@ -11,6 +11,12 @@ function Login() {
 
     const signIn = e => {
         e.preventDefault()
+
+        // firebase login function
+    }
+
+    const register = e=> {
+        e.preventDefault()
     }
 
     return (
@@ -44,7 +50,10 @@ function Login() {
                 </form>
                     {/* <p>By signing-in you agree to Blistlyfe's Conditions of Use & Sale</p> */}
 
-                    <button className="login__registerButton">Dont have an account?  Create your Blistlyfe account</button>
+                    <button
+                    onClick{ register }
+                    type="submit" 
+                    className="login__registerButton">Dont have an account?  Create your Blistlyfe account</button>
 
 
 
