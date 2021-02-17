@@ -17,6 +17,8 @@ function Login() {
 
     const register = e=> {
         e.preventDefault()
+
+        // firebase registeration function
     }
 
     return (
