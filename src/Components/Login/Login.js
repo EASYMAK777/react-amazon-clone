@@ -3,6 +3,7 @@ import './Login.css'
 import logo from "../img/blistlyfe-logo.jpg"
 import { Link } from "react-router-dom"
 import { auth } from "./firebase"
+import { ContactsOutlined } from '@material-ui/icons'
 
 
 function Login() {
@@ -23,6 +24,10 @@ function Login() {
     }
 
     auth.createUserWithEmailAndPassword(email,password)
+    .then((auth) => {
+        //if user creation is successfull
+        console.log(auth);
+    })
 
     return (
         <div className="login">
