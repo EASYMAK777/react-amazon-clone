@@ -19,6 +19,11 @@ function Login() {
                 <form>
                     <h5>E-mail</h5>
                     <input type='text'/>
+
+                    <h5>Password</h5>
+                    <input type='password'/>
+
+                    <button>Sign-in</button>
                 </form>
 
             </div>
