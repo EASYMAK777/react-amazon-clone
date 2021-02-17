@@ -15,9 +15,8 @@ function Checkout() {
                 <img className = "checkout__ad" 
                 src = "https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg" 
                 alt="advertisement"/>
-            </div>
 
-            <div>
+            
                 <h2 className="checkout__title">Your Shopping Basket</h2>
 
                 {basket.map(item => (
@@ -27,24 +26,25 @@ function Checkout() {
                     image={item.image}
                     price={item.price}
                     rating={item.rating}
-
-                        // id="02311"
-                        // title="edible"
-                        // image ={image1}
-                        // price= {15.99}
-                        // rating="10/10"
+                    
+                    // id="02311"
+                    // title="edible"
+                    // image ={image1}
+                    // price= {15.99}
+                    // rating="10/10"
                     />
-                ))}
+                    ))}
                     
                 {/* CheckoutProduct*/}
                 {/* CheckoutProduct*/}
                 {/* CheckoutProduct*/}
                 {/* CheckoutProduct*/}
                 {/* CheckoutProduct*/}
+           
             </div>
 
             <div className="checkout__right">
-                <h2>Subtotal goes here</h2>
+                <h2>Subtotal</h2>
 
                 <Subtotal/>
             </div>
