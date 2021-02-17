@@ -24,5 +24,5 @@ const auth = firebase.auth();
 
 // exporting db and auth to  be used on sign in page
 
-export {db}
-export {auth}
+export { db,auth }
+// export {auth}

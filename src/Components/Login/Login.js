@@ -2,6 +2,7 @@ import React , { useState }from 'react'
 import './Login.css'
 import logo from "../img/blistlyfe-logo.jpg"
 import { Link } from "react-router-dom"
+import { auth } from "./firebase"
 
 
 function Login() {
@@ -20,6 +21,8 @@ function Login() {
 
         // firebase registeration function
     }
+
+    auth.createUserWithEmailAndPassword(email,password)
 
     return (
         <div className="login">
