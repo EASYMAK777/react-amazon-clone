@@ -22,15 +22,18 @@ function Login() {
         e.preventDefault()
 
         // firebase registeration function
-    }
-
-    auth.createUserWithEmailAndPassword(email,password)
-    .then((auth) => {
-        //if user creation is successfull
         
-        console.log(auth);
-    })
-    // .catch(error => alert(error.message))
+        auth.createUserWithEmailAndPassword(email,password)
+        .then((auth) => {
+            //if user creation is successfull
+            
+            console.log(auth);
+            if (auth){
+                history.push('/')
+            }
+        })
+        .catch(error => alert(error.message))
+    }
 
     return (
         <div className="login">
