@@ -6,15 +6,24 @@ import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
 import Checkout from './Components/Checkout/Checkout'
 import { auth } from "./Components/Firebase/firebase"
+import { useStateValue } from './Components/StateProvider/StateProvider'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
+  const [{}, dispacth] = useStateValue();
 
   useEffect(() => {
       // will only run once when the app component loads...
       auth.onAuthStateChanged(authUser => {
         console.log('THE USER IS ...', authUser);
+
+        if (authUser) {
+          //the user just logged in/ the user was logged in
+
+        } else {
+          // the user is logged out
+        }
       } )
   }, [])
 
