@@ -13,9 +13,9 @@ function Navbar() {
     // dispatch allows for appending and removing items from basket
     const [{ basket, user }, dispatch] = useStateValue();
 
-    cont handleAuthentication = () => {
+    const handleAuthentication = () => {
         if (user) {
-            auth.signOut()
+            auth.signOut();
         }
     }
 
@@ -65,7 +65,7 @@ function Navbar() {
 
                 {/* Login link */}
 
-                <Link to="/login" className="header__link">
+                <Link to={!user && "/login"} className="header__link">
                     <div onClick={handleAuthentication} className="header__option">
                         <span className="header__option1">{user ? 'Sign Out' : 'Sign In'}</span>
                         
