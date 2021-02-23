@@ -40,6 +40,14 @@ const Reducer = (state, action) => {
             basket: newBasket
         }
 
+        //case that listens for the user to login and set the User
+
+        case "SET_USER":
+            return {
+                ...state,
+                user: action,user
+            }
+
     default:
         return state;
     }
