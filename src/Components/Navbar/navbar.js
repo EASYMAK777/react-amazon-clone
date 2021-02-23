@@ -6,11 +6,18 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from "../StateProvider/StateProvider";
 import logo from "../img/blistlyfe-logo.jpg"
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import { auth } from "../Firebase/firebase";
 
 function Navbar() {
     //uses state provider to add functionality to shopping basket
     // dispatch allows for appending and removing items from basket
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
+
+    const handleAuthentication = () => {
+        if (user) {
+            auth.signOut();
+        }
+    }
 
     // Console logging object in the shopping basket
     console.log(basket);
@@ -58,9 +65,11 @@ function Navbar() {
 
                 {/* Login link */}
 
-                <Link to="/login" className="header__link">
-                    <div className="header__option">
-                        <span className="header__option1">Login</span>
+                <Link to= "/login" className="header__link">
+                    <div onClick={handleAuthentication} className="header__option">
+                        <span className="header__option1">
+                            {user ? 'Sign Out' : 'Sign In'}
+                        </span>
                         
                     </div>
                 </Link>
@@ -115,3 +124,13 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+//  <Link to={!user && "/login"} className="header__link">
+// <div onClick={handleAuthentication} className="header__option">
+// <span className="header__option1">
+//     {user ? 'Sign Out' : 'Sign In'}
+// </span>
+
+// </div>
+// </Link>

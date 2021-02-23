@@ -1,11 +1,14 @@
 import React , { useState }from 'react'
 import './Login.css'
 import logo from "../img/blistlyfe-logo.jpg"
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
+import { auth } from "../Firebase/firebase"
+import { ContactsOutlined } from '@material-ui/icons'
 
 
 function Login() {
 
+    const history = useHistory();
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
 
@@ -13,12 +16,29 @@ function Login() {
         e.preventDefault()
 
         // firebase login function
+
+        auth.signInWithEmailAndPassword(email,password)
+        .then(auth =>{
+            history.push('/')
+        })
+        .catch(error => alert(error.message))
     }
 
     const register = e=> {
         e.preventDefault()
 
         // firebase registeration function
+        
+        auth.createUserWithEmailAndPassword(email,password)
+        .then((auth) => {
+            //if user creation is successfull
+            
+            console.log(auth);
+            if (auth){
+                history.push('/')
+            }
+        })
+        .catch(error => alert(error.message))
     }
 
     return (
