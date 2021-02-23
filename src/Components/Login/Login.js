@@ -16,6 +16,12 @@ function Login() {
         e.preventDefault()
 
         // firebase login function
+
+        auth.signInWithEmailAndPassword(email,password)
+        .then(auth =>{
+            history.push('/')
+        })
+        .catch(error => alert(error.message))
     }
 
     const register = e=> {
