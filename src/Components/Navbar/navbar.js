@@ -15,7 +15,7 @@ function Navbar() {
 
     cont handleAuthentication = () => {
         if (user) {
-
+            auth.signOut()
         }
     }
 
