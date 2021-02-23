@@ -65,9 +65,11 @@ function Navbar() {
 
                 {/* Login link */}
 
-                <Link to={!user && "/login"} className="header__link">
+                <Link to= "/login" className="header__link">
                     <div onClick={handleAuthentication} className="header__option">
-                        <span className="header__option1">{user ? 'Sign Out' : 'Sign In'}</span>
+                        <span className="header__option1">
+                            {user ? 'Sign Out' : 'Sign In'}
+                        </span>
                         
                     </div>
                 </Link>
@@ -122,3 +124,13 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+//  <Link to={!user && "/login"} className="header__link">
+// <div onClick={handleAuthentication} className="header__option">
+// <span className="header__option1">
+//     {user ? 'Sign Out' : 'Sign In'}
+// </span>
+
+// </div>
+// </Link>
