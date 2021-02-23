@@ -10,7 +10,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function Navbar() {
     //uses state provider to add functionality to shopping basket
     // dispatch allows for appending and removing items from basket
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
 
     // Console logging object in the shopping basket
     console.log(basket);
@@ -59,8 +59,8 @@ function Navbar() {
                 {/* Login link */}
 
                 <Link to="/login" className="header__link">
-                    <div className="header__option">
-                        <span className="header__option1">Login</span>
+                    <div onClick={handleAuthentication} className="header__option">
+                        <span className="header__option1">{user ? 'Sign Out' : 'Sign In'}</span>
                         
                     </div>
                 </Link>
