@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/navbar"
 import Home from './Components/Home/Home'
 import Login from './Components/Login/Login'
 import Checkout from './Components/Checkout/Checkout'
+import Payment from "./Components/Payment/Payment"
 import { auth } from "./Components/Firebase/firebase"
 import { useStateValue } from './Components/StateProvider/StateProvider'
 
@@ -47,6 +48,10 @@ function App() {
             
             <Checkout />
          
+          </Route>
+
+          <Route path = "/payment">
+            <Payment/>
           </Route>
 
           <Route path="/login">
