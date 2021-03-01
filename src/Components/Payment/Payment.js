@@ -3,16 +3,21 @@ import React from 'react'
 import Navbar from "../Navbar/navbar"
 
 function Payment(){
+    const [{ basket, user }, dispatch] = useStateValue();
+
     return(
         <div className = "payment">
           <div className="payment__container">
               {/* Payment Section - deliver addres */}
             <div className = "payment__section">
-                <h3>Delivery Address</h3>
+                <div className = "payment__title">
+                    <h3>Delivery Address</h3>
+                </div>
             </div>
 
-            <div className="payment__address">
 
+            <div className="payment__address">
+                <p>{user?.email}</p>
             </div>
 
               
